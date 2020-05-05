@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Treehouse Slack Challenge | DOM Manipulation Practice App</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container flex">
+        <ul class="window-options flex">
+          <li class="window-option close pointer"></li>
+          <li class="window-option minimize pointer"></li>
+          <li class="window-option expand pointer"></li>
+        </ul>
+        <img class="logo" src="icons/treehouse.svg" alt="Treehouse Island Inc. Logo">
+        <h1 class="app-title">F.E.W.D. Slack Challenge | DOM Manipulation Practice App</h1>
+        <a class="link" href="" target="_blank">Instructions</a>
+      </div>
+    </header>
+    <div class="alert-banner hidden" id="notification">
+      <div class="container flex">
+        <p></p>
+        <span class="close-icon pointer">x</span>
+      </div>
+    </div>
+    <main class="container">
+      <section class="app-widget widget-projects">
+        <h2 class="app-widget-title title-projects">Projects</h2>
+        <ul class="projects" id="projectList">
+          <li class="project">
+            <div class="project-header flex">
+              <h3 class="project-name">Dummy Project</h3>
+              <img class="plus-icon pointer" src="icons/plus-icon.svg" alt="Plus Icon Expand Details">
+              <ul class="project-langs flex">
+                <li class="project-lang"><img class="html" src="icons/html5.svg" alt="HTML5 Logo"></li>
+                <li class="project-lang"><img class="css" src="icons/css3.svg" alt="CSS3 Logo"></li>
+                <li class="project-lang"><img class="js" src="icons/javascript.svg" alt="JavaScript Logo"></li>
+              </ul>
+            </div>
+            <p class="project-info hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident, repellendus natus officiis repudiandae nostrum cum totam porro quod aliquam, dolorum numquam laudantium recusandae. Veritatis odio repellendus repudiandae neque iure!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="app-widget">
+        <form action="#" name="project-form">
+          <fieldset>
+            <legend class="app-widget-title">Create a Project</legend>
+            <div class="flex form-group">
+              <label for="projectName">Project Name:</label>
+              <input class="form-field" type="text" id="projectName" name="projectName" autofocus>
+            </div>
+            <label>Project Languages:</label>
+            <div class="flex form-group">
+              <input class="form-field" type="checkbox" id="html" name="projectLangs" value="HTML" checked><label for="html">HTML</label>
+            </div>
+            <div class="flex form-group">
+              <input class="form-field" type="checkbox" id="css" name="projectLangs" value="CSS" checked><label for="css">CSS</label>
+            </div>
+            <div class="flex form-group">
+              <input class="form-field" type="checkbox" id="js" name="projectLangs" value="JavaScript"><label for="js">JavaScript</label>
+            </div>
+            <div class="flex form-group">
+              <label for="projectDetails">Project Details:</label>
+              <textarea class="form-field" id="projectDetails" name="projectDetails" rows="4" placeholder="Give the project some information..."></textarea>
+            </div>
+            <button class="btn btn-default" id="addProjectButton" type="submit">Add Project</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="app-widget">
+        <form action="#">
+          <fieldset>
+            <legend class="app-widget-title">Invitees</legend>
+            <div class="flex form-group">
+              <label for="studentName">Student:</label>
+              <input class="form-field" type="text" id="studentName" name="studentName" placeholder="Student name...">
+            </div>
+            <div class="flex form-group">
+              <label for="projectSelect">Project:</label>
+              <select class="form-field" name="projectName" id="projectSelect"></select>
+            </div>
+            <button class="btn btn-default" id="inviteStudentButton" type="submit">Invite Student</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="container flex">
+      <img class="logo" src="icons/treehouse.svg" alt="Treehouse Island Inc. Logo">
+      <span>Treehouse F.E.W.D. Slack Challenges</span>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
