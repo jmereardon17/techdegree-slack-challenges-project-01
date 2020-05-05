@@ -1,5 +1,5 @@
 
-# ![Treehouse Island Inc. Logo](https://github.com/jmereardon17/techdegree-slack-challenges-project-01/tree/master/icons/treehouse.svg "Treehouse Island Inc. Logo") Techdegree F.E.W.D. Slack Challenge Project 01
+# ![Treehouse Island Inc. Logo](https://img.favpng.com/4/17/20/treehouse-tree-house-web-development-logo-project-png-favpng-hcGqGaXqMLkCmzcCjHyxiW6ac.jpg "Treehouse Island Inc. Logo") Techdegree F.E.W.D. Slack Challenge Project 01
 
 ## Dom Manipulation Practice App
 
