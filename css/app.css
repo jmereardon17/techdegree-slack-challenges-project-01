@@ -1,0 +1,328 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500,600&display=swap');
+
+/* *****************************************************
+  Variables
+***************************************************** */
+:root {
+  --dark-grey: #3e474f;
+  --silver: #edeff0;
+  --color-text: #767676;
+  --color-link: #b2bbbd;
+  --color-warning: #cf5f5f;
+  --color-form-field-focus: #F9FAFA;
+  --color-form-field-text: #434343;
+  --color-treehouse-green: #5fcf80;
+  --color-btn-default: #326e99;
+  --color-btn-hover: #79e69a;
+}
+/* *****************************************************
+  Base Element Styles
+***************************************************** */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Baloo Chettan 2', sans-serif;
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--silver);
+}
+main {
+  margin-top: 30px;
+  padding: 0 1em;
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: .95em;
+  line-height: 1.4;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+footer {
+  margin-top: 10px;
+  padding: 20px 0;
+  text-align: center;
+}
+/* *****************************************************
+  Helper Classes
+***************************************************** */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.success {
+  border-color: var(--color-treehouse-green);
+  background-color: var(--color-treehouse-green);
+}
+.warning {
+  border-color: var(--color-warning);
+  background-color: var(--color-warning);
+}
+/* *****************************************************
+  Base Layout Styles
+***************************************************** */
+.app-header {
+  background: var(--dark-grey);
+  padding: 10px;
+}
+
+/* --- Window Tab Styles  --- */
+
+.window-options {
+  display: none;
+  margin-right: 20px; 
+}
+.window-option::before {
+  content: "●";
+  font-size: 25px;
+}
+.window-option {
+  margin-right: 5px;
+}
+.close {
+  color: tomato;
+}
+.minimize {
+  color: orange;
+}
+.expand {
+  color: #0aa00a;
+}
+
+/* --- Navigation --- */
+
+.logo {
+  width: 32px;
+  margin-right: 10px;
+  -webkit-transition: transform .4s ease;
+  transition: transform .4s ease;
+}
+.logo:hover {
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+.app-title {
+  display: inline-block;
+  color: #b2bbbd;
+  margin: 0;
+  font-size: 1.1em;
+  flex: 0 1 80%;
+}
+.link {
+  margin-top: 10px;
+  color: var(--color-link);
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+.link:hover {
+  color: white;
+}
+
+/* --- Base App Widget Styles --- */
+
+.app-widget {
+  background-color: white;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 40px 20px;
+  margin-bottom: 12px;
+}
+.app-widget:last-child {
+  margin-bottom: 0;
+}
+.app-widget-title {
+  font-size: 1.3em;
+  color: #7b8b8e;
+  margin-bottom: 1em;
+}
+.widget-projects {
+  padding: 30px 0 40px;
+}
+.title-projects {
+  margin-left: 20px;
+}
+
+/* --- Project Widget Styles --- */
+
+.projects {
+  background-color: var(--color-form-field-focus);
+}
+.project {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--silver);
+}
+.project:first-child {
+  border-top: 1px solid var(--silver);
+}
+.project-header {
+  justify-content: space-between;
+}
+.project-name {
+  color: var(--color-treehouse-green);
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.project-langs {
+  flex-basis: 100%;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+.project-lang {
+  margin-right: 15px;
+}
+
+/* --- Page Element Styles --- */
+
+.alert-banner {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  font-size: 18px;
+}
+.alert-banner > .container {
+  max-width: 900px;
+  justify-content: space-between;
+}
+.close-icon {
+  font-size: 22px;
+}
+.plus-icon {
+  width: 40px;
+  transition: filter .4s ease;
+}
+.plus-icon:hover {
+  filter: grayscale(100%);
+}
+.html,
+.css,
+.js {
+  width: 18px;
+}
+
+/* --- Form Styles --- */
+
+label {
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #4b5658;
+}
+
+.form-group {
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.form-field {
+  outline: 0;
+  border: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  background-color: white;
+  color: var(--color-form-field-text);
+  transition: background-color .5s ease;
+}
+
+.form-field[type="checkbox"] {
+  width: auto;
+  margin-right: 12px;
+}
+
+.form-field[type="checkbox"] + label {
+  margin-bottom: 0;
+}
+
+.form-field:focus {
+  border-color: #f0f2f4;
+  background-color: var(--color-form-field-focus);
+}
+
+.form-field:focus::placeholder {
+  color: var(--color-form-field-text);
+}
+
+.btn {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 4px;
+  font-weight: 400;
+  -webkit-transition: background-color .4s ease, color .4s ease;
+  transition: background-color .4s ease, color .4s ease;
+  margin-top: 25px;
+}
+.btn-default {
+  border-color: var(--color-btn-default);
+  background-color: var(--color-btn-default);
+  color: white;
+}
+.btn-default:hover {
+  border-color: var(--color-btn-hover);
+  background-color: var(--color-btn-hover);
+}
+/* *****************************************************
+  Media Queries
+***************************************************** */
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .window-options {
+    display: flex;
+  }
+  .logo,
+  .app-title {
+    flex-basis: auto;
+  }
+  .app-title {
+    margin-right: auto;
+  }
+  .link {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+  main.container {
+    width: 80%;
+    max-width: 600px;
+  }
+}
