@@ -3,11 +3,14 @@
 
 ## Dom Manipulation Practice App
 
-### Overview
+### *Overview*
 
+---
 The project is based on the beloved Treehouse landing page for the techdegree. The page contains three widgets that you will manipulate with JavaScript to complete the functionality to the page.
 
-### Instructions
+### *Instructions*
+
+---
 
 The HTML and CSS files are already set up for you. The JavaScript file contains references to the various elements on the page as well as defined event listeners for the form submit buttons, alert notification banner close icon, and project list ul. You will therefore use the JavaScript file to complete the tasks. The complete folder contains an example of the completed project.
 
