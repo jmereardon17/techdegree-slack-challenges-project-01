@@ -22,7 +22,7 @@ The HTML and CSS files are already set up for you. The JavaScript file contains 
 
 4. Create a function that will reset the forms.
 
-5. Using the pre-defined `alert` variable, create a function that will show the alert banner with the appropriate `background-color` and message that will depend on the outcome of the forms. For example, if the user leaves the "Project Name" field blank, show an alert with the warning background and a message.
+5. Using the pre-defined `alertMessage` variable, create a function that will show the alert banner with the appropriate `background-color` and message that will depend on the outcome of the forms. For example, if the user leaves the "Project Name" field blank, show an alert with the warning background and a message.
 
 6. Using the `closeIcon` event listener, create a way for users to close the alert notification banner.
 
