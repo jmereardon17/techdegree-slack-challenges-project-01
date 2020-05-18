@@ -2,7 +2,7 @@
   Variables
 ***************************************************** */
 // Alert Notification Banner
-const alert = document.getElementById('notification');
+const alertMessage = document.getElementById('notification');
 const closeIcon = document.querySelector('.close-icon');
 // Projects list UL
 const projectList = document.getElementById('projectList');
